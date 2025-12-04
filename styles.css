@@ -1,1 +1,73 @@
 /*  your css code here. If applicable */
+/* Page background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;   /* required */
+}
+
+/* Main library container */
+.book-library {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #ffffff;   /* required */
+  padding: 20px 0 30px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Heading */
+.library-title {
+  margin-bottom: 20px;
+}
+
+/* Each book block */
+.book {
+  padding: 20px 40px 30px;
+  border-top: 1px solid #eeeeee;
+}
+
+/* Book cover */
+.book-cover {
+  width: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+/* Title & author */
+.book-title {
+  text-align: left;
+  font-size: 14px;
+  margin: 5px 0 2px;
+}
+
+.book-author {
+  text-align: left;
+  font-size: 12px;
+  color: #777777;              /* required author color */
+}
+
+/* Price bar */
+.book-price {
+  margin-top: 10px;
+  background-color: #2ecc71;   /* required price-block color */
+  color: #ffffff;
+  font-size: 13px;
+  padding: 6px 0;
+}
+
+/* Make sure layout works on small screens */
+@media (max-width: 480px) {
+  .book-library {
+    margin: 10px;
+  }
+
+  .book {
+    padding: 15px 15px 20px;
+  }
+
+  .book-cover {
+    width: 150px;
+  }
+}
